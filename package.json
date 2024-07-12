@@ -2,6 +2,7 @@
   "name": "colt",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Nikolas1790.github.io/test-next-js/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
