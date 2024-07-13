@@ -9,7 +9,6 @@ export default function AddCompanyButton() {
   return (
     <>
       <Button onClick={() => router.push('/companies/new')}>Add company</Button>
-
     </>
   );
 }
