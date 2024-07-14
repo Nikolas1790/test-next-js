@@ -8,19 +8,8 @@ import MagicButton from '@/app/components/magic-button';
 
 export interface PageProps {}
 
-export interface SaleSummary {
-  companyId: number;
-  companyTitle: string;
-  sold: number;
-  income: number;
-}
-
 export default async function Page({}: PageProps) {
-  const data = await new Promise<SaleSummary[]>((res) => {
-    setTimeout(() => {
-      res(getSummarySales());
-    }, 4000)
-  });
+  const data = await getSummarySales();
 
   return (
     <DashboardCard label={<>Sales details<MagicButton /></>}>
